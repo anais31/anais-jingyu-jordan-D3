@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cannibales & Missionnaires</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" href="styles/tingle.css" media="all">
+
+  </head>
+
+  <body>
+
+      <header>
+        <ul class="bouton">
+        <li><a href="etape12C5.html"><img src="images/retour.png" alt="retour" ></a></li>
+        <li><a href="#" class="btn btn--primary btn-demo js-tingle-modal-1"><img src="images/info.png" alt="info"></a></li>
+        <li><a href="etape00.html"><img src="images/restart.png" alt="restart" ></a></li>
+      </ul>
+      </header>
+
+      <div class="tingle-demo tingle-demo-tiny">
+        <h1>Les règles du jeu</h1>
+        <p>Il y a fort longtemps, trois missionaires et trois cannibales attendaient pour traverser une rivière. Le bateau qui leur permettrait d'atteindre cet objectif ne peut contenir que deux personnes. Ce dernier ne peut traverser sans personne à bord.</p>
+      <p>Cependant, les cannibales sont des monstres furieeuuux ! Si les missionaires sont en nombres inférieurs, les cannibales n'hésiteront pas à les manger.</p>
+      <p>Comment pourrez-vous faire passer tout le monde sans qu'il y ait de victime ?</p>
+      </div>
+
+
+      <!-- Ici l'appel vers le javascript de la modale. Attention à tout mettre dans les bon dossier avec les bons chemins -->
+      <script src="js/tingle.js"></script>
+
+
+      <!-- Ici l'initialisation de la modale. -->
+      <script type="text/javascript">
+
+      /**
+      * Modal Tiny no footer
+      */
+
+      var fenetreModale = new tingle.modal();
+      var btn = document.querySelector('.js-tingle-modal-1');
+      btn.addEventListener('click', function(){
+        fenetreModale.open();
+      });
+      fenetreModale.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
+      </script>`
+
+<section class="view">
+
+
+      <div class="haut">
+        <div class="cannibales">
+          <div class="image-container"><img src="images/cannibale1.png" alt="cannibale"></div>
+        </div>
+
+
+
+        <div class="missionnaires">
+        </div>
+
+      </div>
+
+      <div class="bas">
+        <div class="cannibales">
+          <div class="image-container"><img src="images/cannibale1.png" alt="cannibale2"></div>
+          <div class="image-container"><img src="images/cannibale1.png" alt="cannibale2"></div>
+    </div>
+
+    <div class="bateau">
+        <img src="images/bateau.png" alt="bateau">
+    </div>
+
+        <div class="missionnaires">
+          <div class="image-container"><img src="images/missionnaire1.png" alt="missionnaire2"></div>
+          <div class="image-container"><img src="images/missionnaire1.png" alt="missionnaire2"></div>
+          <div class="image-container"><img src="images/missionnaire1.png" alt="missionnaire2"></div>
+        </div>
+      </div>
+</section>
+
+
+      <footer>
+        <ul class="choix">
+          <li><a href="etape14C1.html"><img src="images/choix1.png" alt="un missionnaire" ></a></li>
+          <li><a href="etape12C8.html"><img src="images/choix2.png" alt="un cannibale"></a></li>
+          <li><a href="etape14C5.html"><img src="images/choix3.png" alt="deux cannibales" ></a></li>
+          <li><a href="etape14C4.html"><img src="images/choix4.png" alt="deux missionnaire"></a></li>
+          <li><a href="etape14C3.html"><img src="images/choix5.png" alt="un cannibale et un missionnaire" ></a></li>
+        <!--<li><a href=""><img src="images/carre.png" alt="choix4"></a></li>
+        <li><a href=""><img src="images/carre.png" alt="choix5" ></a></li>-->
+      </ul>
+      </footer>
+
+
+
+  </body>
+</html>
